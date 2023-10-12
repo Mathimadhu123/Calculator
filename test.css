@@ -1,0 +1,667 @@
+
+.t-e {
+	display: inline-block;
+  	height: 28px;
+  	width: 28px;
+}
+
+
+
+
+
+.t-cptn
+{
+	line-height: 28px;
+}
+
+.tree-row {
+	display: flex;
+}
+
+.tree-row:hover {
+	background-color: gray;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+li {
+    list-style-type: none;
+    border-left: 2px solid #353333;
+    margin-left: 1em;
+}
+
+li div {
+    padding-left: 1em;
+    position: relative;
+}
+
+li div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -2px;
+    bottom: 50%;
+    width: 0.75em;
+    border: 2px solid #6e6969;
+    border-top: 0 none transparent;
+    border-right: 0 none transparent;
+}
+
+ul > li:last-child {
+    border-left: 2px solid transparent;
+}
+
+body{
+	background-color: aliceblue;
+}
+.res{
+	background-color: #beb4b4;
+   
+} 
+	
+	
+.nested {
+		display: none;
+}
+.active {
+		display: block;
+
+	} 
+
+
+.hidden{
+	display: none;
+}	
+
+#toggle2 {
+    margin-right: 12px;
+    display: inline-block;
+    width: 60px;
+    height:20px;
+    position: relative;
+    border-radius: 34px;
+    background-color:rgb(180, 180, 197) ;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+}
+
+#toggle2::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 2px;
+    left: 35px;
+    transition: transform 0.3s;
+    
+}
+
+#toggle2.off {
+    background-color:#66bb6a ;
+}
+
+#toggle2.off::before {
+    transform: translateX(-27px);
+}
+
+
+
+
+#toggle1 {
+    margin-right: 12px;
+    display: inline-block;
+    width: 60px;
+    height:20px;
+    position: relative;
+    border-radius: 34px;
+    background-color:rgb(180, 180, 197) ;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+}
+
+#toggle1::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 2px;
+    left: 35px;
+    transition: transform 0.3s;
+    
+}
+
+/* #toggle1.off {
+    background-color:#66bb6a ;
+}
+
+#toggle1.off::before {
+    transform: translateX(-27px);
+} */
+
+#toggle1.offf {
+    background-color:#66bb6a ;
+}
+
+#toggle1.offf::before {
+    transform: translateX(-27px);
+}
+
+
+
+/* .container{
+    margin: 10px;
+    width:70%;
+   border:3px;
+   position:absolute;
+   margin-top: 20px;
+   margin-left: 10px;
+   
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+} */
+
+
+
+body {
+    background-color: #e2d6d6;
+   margin-left: 20%;
+
+}
+
+ 
+#myList{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    width:130px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    
+}
+/* this to remove focus */
+select #myList{
+    background-color: transparent;
+    border-radius: 0 4px 4px 4px;
+}
+#myList:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0);
+}
+ 
+#myOperator{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:90px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+   
+}
+#myOperator:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+#operator{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:70px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    margin: 0%;
+}
+#operator:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0); }
+
+
+#val1{
+        margin-right: 12px;
+        background-color: transparent ;
+        font-size: 15px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        width:180px;
+        padding:10px 10px 10px 0;
+        border-radius: 0%;
+        border:none;
+        border-bottom: 3px solid rgba(0,0,0,0.12) ;
+        margin: 0%;
+}
+#val1:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+ #val2{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:180px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    margin: 0%;
+}
+#val2:focus{ 
+appearance: none;
+outline: none;
+border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+#val1{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:180px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    margin: 0%;
+}
+#val1:focus{ 
+appearance: none;
+outline: none;
+border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+#footer{
+    display:flexbox;
+    width: 40%;
+    margin-top: 29%;
+    margin-left: 7%;
+}
+#btn1{
+    background-color: #e2d6d6; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 45px;
+}
+#myList2{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    width:130px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+}
+select #myList2{
+    background-color: transparent;
+    border-radius: 0 4px 4px 4px;
+}
+#myList2:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0);
+}
+ 
+#myOperator2{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:90px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+   
+}
+#myOperator2:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+#operator2{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:70px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    margin: 0%;
+}
+#operator2:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0); }
+#val3{
+        margin-right: 12px;
+        background-color: transparent ;
+        font-size: 15px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        width:180px;
+        padding:10px 10px 10px 0;
+        border-radius: 0%;
+        border:none;
+        border-bottom: 3px solid rgba(0,0,0,0.12) ;
+        margin: 0%;
+}
+#val3:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+ #val3{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:180px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    margin: 0%;
+}
+#val3:focus{ 
+appearance: none;
+outline: none;
+border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+#val3{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:180px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    margin: 0%;
+}
+#val3:focus{ 
+appearance: none;
+outline: none;
+border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+
+#myList3{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    width:130px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+}
+select #myList3{
+    background-color: transparent;
+    border-radius: 0 4px 4px 4px;
+}
+#myList3:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0);
+}
+#myOperator3{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:90px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+   
+}
+#myOperator3:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+#operator3{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:70px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    margin: 0%;
+}
+#operator3:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0); }
+    
+#val4{
+        margin-right: 12px;
+        background-color: transparent ;
+        font-size: 15px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        width:180px;
+        padding:10px 10px 10px 0;
+        border-radius: 0%;
+        border:none;
+        border-bottom: 3px solid rgba(0,0,0,0.12) ;
+        margin: 0%;
+}
+#val4:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+ #val4{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:180px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    margin: 0%;
+}
+#val4:focus{ 
+appearance: none;
+outline: none;
+border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+#val4{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:180px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    margin: 0%;
+}
+#val4:focus{ 
+appearance: none;
+outline: none;
+border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+
+
+#myList4{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    width:130px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+}
+select #myList4{
+    background-color: transparent;
+    border-radius: 0 4px 4px 4px;
+}
+#myList4:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0);
+}
+#myOperator4{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:90px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+   
+}
+#myOperator4:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+#operator4{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:70px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    margin: 0%;
+}
+#operator4:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0); }
+    #val5{
+        margin-right: 12px;
+        background-color: transparent ;
+        font-size: 15px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        width:180px;
+        padding:10px 10px 10px 0;
+        border-radius: 0%;
+        border:none;
+        border-bottom: 3px solid rgba(0,0,0,0.12) ;
+        margin: 0%;
+}
+#val5:focus{ 
+    appearance: none;
+    outline: none;
+    border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+ #val5{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:180px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    margin: 0%;
+}
+#val5:focus{ 
+appearance: none;
+outline: none;
+border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+#val5{
+    margin-right: 12px;
+    background-color: transparent ;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width:180px;
+    padding:10px 10px 10px 0;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 3px solid rgba(0,0,0,0.12) ;
+    margin: 0%;
+}
+#val5:focus{ 
+appearance: none;
+outline: none;
+border-bottom: 3px solid rgba(0,0,0,0); 
+
+}
+#b{
+    width:auto;
+    max-height: max-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#e2d6d6;
+    margin-top: 10px;
+}

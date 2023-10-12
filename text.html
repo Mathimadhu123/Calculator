@@ -1,0 +1,318 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="test.css">
+    <script type="text/javascript" src="test.js"></script>
+</head>
+
+
+<body>
+    <!-- <script>
+        function myFunction() {
+        var x = document.getElementsByClassName("nested");
+        for (var i = 0; i < x.length; i++) {
+          if (x[i].classList.contains("active")) {
+            x[i].classList.remove("active");
+          } else {
+            x[i].classList.add("active");
+          }
+        }
+      } 
+    </script> -->
+    <form>
+        <div class="container">
+            <ul id="first">
+                <li>
+                    <div id="list">
+                        <span id="t1">
+                            <label class="tree_label"> <b>Property &nbsp;</b> </label>
+                            <span id="toggle2" class="off" ></span>
+                            <!-- on -->
+                            <select id="myList" style="display:inline-block;">
+                                <option id="option1" value="Property 1" style="background-color: #e2d6d6;"
+                                    onclick="display('option1')">
+                                    Property
+                                    1</option>
+                                <option id="option2" value="Property 2" style="background-color: #e2d6d6;"
+                                    onclick="display('option1')">
+                                    Property 2</option>
+                                <option id="option3" value="Property 3" style="background-color: #e2d6d6;"
+                                    onclick="display('option1')">
+                                    Property 3</option>
+                                <option id="option4" value="Property 4" style="background-color: #e2d6d6;"
+                                    onclick="display('option1')">
+                                    Property 4</option>
+                                <option id="option5" value="Property 5" style="background-color: #e2d6d6;"
+                                    onclick="display('option1')">
+                                    Property 5</option>
+                                <option id="option6" value="Property 6" style="background-color: #e2d6d6;"
+                                    onclick="display('option1')">
+                                    Property 6</option>
+                                <option id="option7" value="Property 7" style="background-color: #e2d6d6;"
+                                    onclick="display('option1')">
+                                    Property 7</option>
+                                <option id="option8" value="Property 8" style="background-color: #e2d6d6;"
+                                    onclick="display('option1')">
+                                    Property 8</option>
+                                <option id="option9" value="Property 9" style="background-color: #e2d6d6;"
+                                    onclick="display('option1')">
+                                    Property 9</option>
+                                <option id="option10" value="Property 10" style="background-color: #e2d6d6;"
+                                    onclick="display('option1')">Property 10</option>
+                            </select>
+                            <select id="myOperator" style="display:inline-block;">
+                                <div class="dropdown">
+                                    <option id="option1" value="=" style="background-color: #e2d6d6;"> = </option>
+                                    <option id="option2" value="!=" style="background-color: #e2d6d6;"> != </option>
+                                    <option id="option3" value="<" style="background-color: #e2d6d6;">
+                                        < </option>
+                                    <option id="option4" value=">" style="background-color: #e2d6d6;"> > </option>
+                                    <option id="option5" value="<=" style="background-color: #e2d6d6;">
+                                        <= </option>
+                                    <option id="option6" value=">=" style="background-color: #e2d6d6;"> >= </option>
+                                </div>
+                                &nbsp;
+                            </select>
+                            <input const type="text" id="val1" name="val" value="100" style="display:none;">
+                        </span>
+                        <label> <b> &nbsp; Property &nbsp;</b> </label>
+                        <span id="toggle1" class="on"> &nbsp;</span>
+                        <!-- off -->
+                        <input type="text" id="val2" name="val" value="100" style="display:inline-block;">
+                        <span id="btn">
+                            <button id="btn1" type="button" onClick=" myFunction() "> ADD </button>
+                            <select id="operator" class="hidden">
+                                <option id="option1" value="AND" style="background-color: #e2d6d6;">AND</option>
+                                <option id="option2" value="OR" style="background-color: #e2d6d6;">OR</option>
+                            </select>
+                        </span>
+
+                    </div>
+                    <!-- <ul>
+                        <li>
+                          
+                        </li>
+                    </ul> -->
+
+
+
+
+
+                    <ul class="nested ">
+                        <li>
+                            <div>
+                                <label class="tree_label"> <b>Property &nbsp;</b> </label>
+                                <span id="toggle1" class="offf"></span>
+                                <select id="myList2">
+                                    <option id="option1" value="Property 1" style="background-color: #e2d6d6;"
+                                        onclick="display('option1')">
+                                        Property
+                                        1</option>
+                                    <option id="option2" value="Property 2" style="background-color: #e2d6d6;"
+                                        onclick="display('option1')">
+                                        Property 2</option>
+                                    <option id="option3" value="Property 3" style="background-color: #e2d6d6;"
+                                        onclick="display('option1')">
+                                        Property 3</option>
+                                    <option id="option4" value="Property 4" style="background-color: #e2d6d6;"
+                                        onclick="display('option1')">
+                                        Property 4</option>
+                                    <option id="option5" value="Property 5" style="background-color: #e2d6d6;"
+                                        onclick="display('option1')">
+                                        Property 5</option>
+                                    <option id="option6" value="Property 6" style="background-color: #e2d6d6;"
+                                        onclick="display('option1')">
+                                        Property 6</option>
+                                    <option id="option7" value="Property 7" style="background-color: #e2d6d6;"
+                                        onclick="display('option1')">
+                                        Property 7</option>
+                                    <option id="option8" value="Property 8" style="background-color: #e2d6d6;"
+                                        onclick="display('option1')">
+                                        Property 8</option>
+                                    <option id="option9" value="Property 9" style="background-color: #e2d6d6;"
+                                        onclick="display('option1')">
+                                        Property 9</option>
+                                    <option id="option10" value="Property 10" style="background-color: #e2d6d6;"
+                                        onclick="display('option1')">Property 10</option>
+                                </select>
+                                <select id="myOperator2">
+                                    <div class="dropdown">
+                                        <option id="option1" value="=" style="background-color: #e2d6d6;"> = </option>
+                                        <option id="option2" value="!=" style="background-color: #e2d6d6;"> != </option>
+                                        <option id="option3" value="<" style="background-color: #e2d6d6;">
+                                            < </option>
+                                        <option id="option4" value=">" style="background-color: #e2d6d6;"> > </option>
+                                        <option id="option5" value="<=" style="background-color: #e2d6d6;">
+                                            <= </option>
+                                        <option id="option6" value=">=" style="background-color: #e2d6d6;"> >= </option>
+                                    </div>
+                                    &nbsp;
+                                </select>
+                                <input const type="text" id="val3" name="val" value="100" style="display:none;">
+                                <label> <b> &nbsp; Property &nbsp;</b> </label>
+                                <span id="toggle2"> &nbsp;</span>
+                                <input type="text" id="val3" name="val" value="100" style="display: inline-block">
+                            </div>
+                            <ul class="nested">
+                                <li>
+                                    <div>
+                                        <label class="tree_label"> <b>Property &nbsp;</b> </label>
+                                        <span id="toggle"></span>
+                                        <select id="myList3">
+                                            <option id="option1" value="Property 1" style="background-color: #e2d6d6;"
+                                                onclick="display('option1')">
+                                                Property
+                                                1</option>
+                                            <option id="option2" value="Property 2" style="background-color: #e2d6d6;"
+                                                onclick="display('option1')">
+                                                Property 2</option>
+                                            <option id="option3" value="Property 3" style="background-color: #e2d6d6;"
+                                                onclick="display('option1')">
+                                                Property 3</option>
+                                            <option id="option4" value="Property 4" style="background-color: #e2d6d6;"
+                                                onclick="display('option1')">
+                                                Property 4</option>
+                                            <option id="option5" value="Property 5" style="background-color: #e2d6d6;"
+                                                onclick="display('option1')">
+                                                Property 5</option>
+                                            <option id="option6" value="Property 6" style="background-color: #e2d6d6;"
+                                                onclick="display('option1')">
+                                                Property 6</option>
+                                            <option id="option7" value="Property 7" style="background-color: #e2d6d6;"
+                                                onclick="display('option1')">
+                                                Property 7</option>
+                                            <option id="option8" value="Property 8" style="background-color: #e2d6d6;"
+                                                onclick="display('option1')">
+                                                Property 8</option>
+                                            <option id="option9" value="Property 9" style="background-color: #e2d6d6;"
+                                                onclick="display('option1')">
+                                                Property 9</option>
+                                            <option id="option10" value="Property 10" style="background-color: #e2d6d6;"
+                                                onclick="display('option1')">Property 10</option>
+                                        </select>
+                                        <select id="myOperator3">
+                                            <div class="dropdown">
+                                                <option id="option1" value="=" style="background-color: #e2d6d6;"> =
+                                                </option>
+                                                <option id="option2" value="!=" style="background-color: #e2d6d6;"> !=
+                                                </option>
+                                                <option id="option3" value="<" style="background-color: #e2d6d6;">
+                                                    < </option>
+                                                <option id="option4" value=">" style="background-color: #e2d6d6;"> >
+                                                </option>
+                                                <option id="option5" value="<=" style="background-color: #e2d6d6;">
+                                                    <= </option>
+                                                <option id="option6" value=">=" style="background-color: #e2d6d6;"> >=
+                                                </option>
+                                            </div>
+                                            &nbsp;
+                                        </select>
+                                        <label> <b> &nbsp; Property &nbsp;</b> </label>
+                                        <span id="toggle2"> &nbsp;</span>
+                                        <input type="text" id="val4" name="val" value="100"
+                                            style="display: inline-block">
+                                    </div>
+                                    <ul class=" nested ">
+                                        <li id="fourth">
+                                            <div>
+                                                <label class="tree_label"> <b>Property &nbsp;</b> </label>
+                                                <span id="toggle"></span>
+                                                <select id="myList4">
+                                                    <option id="option1" value="Property 1"
+                                                        style="background-color: #e2d6d6;" onclick="display('option1')">
+                                                        Property
+                                                        1</option>
+                                                    <option id="option2" value="Property 2"
+                                                        style="background-color: #e2d6d6;" onclick="display('option1')">
+                                                        Property 2</option>
+                                                    <option id="option3" value="Property 3"
+                                                        style="background-color: #e2d6d6;" onclick="display('option1')">
+                                                        Property 3</option>
+                                                    <option id="option4" value="Property 4"
+                                                        style="background-color: #e2d6d6;" onclick="display('option1')">
+                                                        Property 4</option>
+                                                    <option id="option5" value="Property 5"
+                                                        style="background-color: #e2d6d6;" onclick="display('option1')">
+                                                        Property 5</option>
+                                                    <option id="option6" value="Property 6"
+                                                        style="background-color: #e2d6d6;" onclick="display('option1')">
+                                                        Property 6</option>
+                                                    <option id="option7" value="Property 7"
+                                                        style="background-color: #e2d6d6;" onclick="display('option1')">
+                                                        Property 7</option>
+                                                    <option id="option8" value="Property 8"
+                                                        style="background-color: #e2d6d6;" onclick="display('option1')">
+                                                        Property 8</option>
+                                                    <option id="option9" value="Property 9"
+                                                        style="background-color: #e2d6d6;" onclick="display('option1')">
+                                                        Property 9</option>
+                                                    <option id="option10" value="Property 10"
+                                                        style="background-color: #e2d6d6;" onclick="display('option1')">
+                                                        Property 10</option>
+                                                </select>
+                                                <select id="myOperator4">
+                                                    <div class="dropdown">
+                                                        <option id="option1" value="="
+                                                            style="background-color: #e2d6d6;"> = </option>
+                                                        <option id="option2" value="!="
+                                                            style="background-color: #e2d6d6;"> != </option>
+                                                        <option id="option3" value="<"
+                                                            style="background-color: #e2d6d6;">
+                                                            < </option>
+                                                        <option id="option4" value=">"
+                                                            style="background-color: #e2d6d6;"> > </option>
+                                                        <option id="option5" value="<="
+                                                            style="background-color: #e2d6d6;">
+                                                            <= </option>
+                                                        <option id="option6" value=">="
+                                                            style="background-color: #e2d6d6;"> >= </option>
+                                                    </div>
+                                                    &nbsp;
+                                                </select>
+                                                <label> <b> &nbsp; Property &nbsp;</b> </label>
+                                                <span id="toggle2"> &nbsp;</span>
+                                                <input type="text" id="val5" name="val" value="100"
+                                                    style="display: inline-block">
+                                            </div>
+                                        </li>
+
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+
+                    <!-- </li>
+              </ul> -->
+
+
+                </li>
+            </ul>
+            <!-- <button id="add-button">Add More</button> -->
+
+        </div>
+
+    </form>
+
+    <div id="footer">
+        <div class="dis" id="dis">
+
+            <div id="res">
+                <input type="text" style="background-color:#e2d6d6"  >
+            </div>
+            <input type="button" id="b" value="Result" onclick="displayExp()">  </input>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="test.js"></script>
+
+</body>
+
+
+
+</html>
+
+
+
+
